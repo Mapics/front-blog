@@ -31,7 +31,7 @@ export default function Home() {
               <p>Chargement...</p>
             ) : (
               articles.map((article) => (
-                <Article title={article.title} author={article.author} content={article.content} date={article.date} />
+                <Article title={article.title} author={article.author} content={article.content} date={article.created_at} />
               ))
           )}
         </div>
