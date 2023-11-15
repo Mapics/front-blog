@@ -7,12 +7,19 @@ header {
   justify-content: space-between;
   height: 10vh;
   width: 100%;
-  padding: 0 1vw;
+  padding: 0 3vh;
   z-index: 1;
   border-bottom: var(--border);
 
-  .logoLink, .logo {
-    height: 100%;
+  .logo {
+    font-size: 2.6vh;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   ul {

@@ -3,26 +3,48 @@ article {
     border: var(--border);
     border-radius: 1vh;
     background-color: var(--white);
-    margin-bottom: 2vh;
-    // box-shadow: 0 0 5px #ccc;
+    height: fit-content;
+    width: 100%;
+    // min-width: 15%;
+    // width: 25%;
+
+    .top {
+        display: flex;
+        height: 4vh;
+        width: 100%;
+        margin-bottom: 1.6vh;
+
+        img {
+            height: 100%;
+            border-radius: 50%;
+            margin-right: 0.8vh;
+        }
+
+        .test {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 85%;
+        }
+    }
 
     .title {
-        font-size: 2.6vh;
+        font-size: 2.4vh;
         font-weight: 600;
     }
 
     .author {
-        font-size: 1.6vh;
-        margin-bottom: 1.6vh;
+        font-size: 1.4vh;
         color: var(--grey);
     }
 
     .content {
-        font-size: 1.8vh;
+        font-size: 1.6vh;
         margin-bottom: 1vh;
     }
 
     .date {
-        font-size: 1.4vh;
+        font-size: 1.3vh;
     }
 }

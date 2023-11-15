@@ -2,11 +2,11 @@
 
 :root {
   --font: 'Lexend', sans-serif;
-  --white: #fff;
-  --black: #000;
+  --white: #ffffff;
+  --black: #000000;
   --grey: #7a7a7a;
-  --blue: #1e90ff;
-  --border-blue: #1a7cdf;
+  --blue: #2370ff;
+  --border-blue: #1a5ae8;
   --light-grey: #f5f5f5;
   --dark-grey: #e4e4e4;
   --red: #ff3f3f;
@@ -14,6 +14,11 @@
   --green: #46d671;
   --border-green: #38af5c;
   --border: 0.15vw solid var(--dark-grey);
+}
+
+::selection {
+  background-color: var(--blue);
+  color: var(--black);
 }
 
 body {

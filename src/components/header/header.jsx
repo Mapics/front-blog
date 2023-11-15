@@ -10,18 +10,17 @@ export default function Header() {
 
   return (
     <header>
-      <Link className="logoLink" to="/">
-        {/* <img src={Logo} alt="" className="logo" /> */}
-        My Blog
-      </Link>
+      <Link className="logo" to="/">MyBlog</Link>
       <nav>
         <ul>
+          {/* Si l'utilisateur n'est pas connecté */}
           <li>
             <Link to="/login">Connexion</Link>
           </li>
           <li>
             <Link to="/register">Inscription</Link>
           </li>
+          {/* Si l'utilisateur est connecté */}
           <li>
             <Link to="/dashboard">Tableau de bord</Link>
           </li>
