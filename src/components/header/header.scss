@@ -1,0 +1,41 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  padding: 0 1vw;
+  z-index: 1;
+  border-bottom: var(--border);
+
+  .logoLink, .logo {
+    height: 100%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.8vh;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.6vh;
+      font-weight: 500;
+      padding: 1vh 2vh;
+      border-radius: 0.6vh;
+      border: 0.15vw solid transparent;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--light-grey);
+        border: var(--border);
+      }
+    }
+  }
+}
