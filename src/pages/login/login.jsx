@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./login.scss";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate()
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleShowPassword = () => {
     setShowPassword(!showPassword);
   };
-
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -28,6 +31,7 @@ export default function Login() {
 
       if (reponse.ok) {
         console.log("Connexion réussie");
+        navigate.push("/");
       } else {
         console.error("Erreur lors de la connexion");
       }
@@ -68,6 +72,7 @@ export default function Login() {
             <button
               className="passwordVisibility"
               onClick={handleShowPassword}
+              type="button"
             ></button>
           </div>
           <button type="submit">Se connecter</button>
