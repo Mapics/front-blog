@@ -17,8 +17,8 @@
 }
 
 ::selection {
-  background-color: var(--blue);
   color: var(--black);
+  background-color: #50505025;
 }
 
 body {
